@@ -1,0 +1,32 @@
+{
+  "name": "koa2",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "repository": "git@github.com:Surile/koa2.git",
+  "author": "heasy <mhecy98@gmail.com>",
+  "scripts": {
+    "eslint": "eslint ./lib"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*js": [
+      "yarn eslint",
+      "git add"
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^3.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.16.1",
+    "husky": "^1.3.1",
+    "pretty-quick": "^1.10.0"
+  },
+  "devDependencies": {
+  }
+}
